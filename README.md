@@ -12,3 +12,8 @@ Suite of tools I developed to facilitate my genomics data analysis work or for p
 3. random_dnaSeq.cc 
 
    Generates 3 random sequences in fasta format from a single late fasta file input
+
+4. my_Assembler_concatemer1.cc
+
+   Ongoing development of tool which applies deBruijn graph to the de-novo assemembly of short
+   read sequence data. Attempts resolution of repeats and assembly into haplotypes. 
