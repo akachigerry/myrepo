@@ -17,3 +17,8 @@ Suite of tools I developed to facilitate my genomics data analysis work or for p
 
    Ongoing development of tool which applies deBruijn graph to the de-novo assemembly of short
    read sequence data. Attempts resolution of repeats and assembly into haplotypes. 
+
+5. menu_check.cc
+  
+   My very first c++ code. Takes user's menu choice from stdin and checks against available menu.
+   Persistent menu request until selected menu is in chef's menu list 
