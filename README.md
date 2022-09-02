@@ -18,6 +18,12 @@ Suite of tools I developed to facilitate my genomics data analysis work or for p
    Ongoing development of tool which applies deBruijn graph to the de-novo assemembly of short
    read sequence data. Attempts resolution of repeats and assembly into haplotypes. 
 
+5. jsonloader5.cc
+
+   Forms part of a genome variation database software still under development.
+   Jsonloader5 implements a bespoke semaphore-controlled de-serialisation of json database file
+   into a custom shared memory created and allocated memory space equivalent to json size.
+
 5. menu_check.cc
   
    My very first c++ code. Takes user's menu choice from stdin and checks against available menu.
