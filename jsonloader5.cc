@@ -47,45 +47,6 @@ std::vector<std::string> split(char const *s, char delimiter)
 }
 
 
-void shmError(int shm)
-{
-	if (shm < 0) //if shmget generates error
-	{
-		perror("shm failed to open");
-	}
-	if (errno == EACCES)
-	{
-		perror("access to shared memory denied");
-		exit(EXIT_FAILURE);
-	}
-	if (errno == EEXIST)
-	{
-		perror("Shared memory already exists");
-		exit(EXIT_FAILURE);
-	}
-	if (errno == EINVAL)
-	{
-		perror("Shared memory outside allowed range");
-		exit(EXIT_FAILURE);
-	}
-	if (errno == ENFILE)
-	{
-		perror("Too many shared memory opened");
-		exit(EXIT_FAILURE);
-	}
-	if (errno == ENOENT)
-	{
-		perror("IPC_CREAT not set and named memory segement doesn't exist");
-		exit(EXIT_FAILURE);
-	}
-	if (errno == ENOMEM)
-	{
-		perror("No memory could be allocated for segment overhead");
-		exit(EXIT_FAILURE);
-	}
-}
-
-
 int main(int argc, char *argv[]) {
 
 	std::cout << "Loading databases...please wait" << "\n";
