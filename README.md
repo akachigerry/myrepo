@@ -11,7 +11,7 @@ Suite of tools I developed to facilitate my genomics data analysis work or for p
 
 3. random_dnaSeq.cc 
 
-   Generates 3 random sequences in fasta format from a single late fasta file input
+   Generates 3 random sequences in fasta format from a single large fasta file input
 
 4. my_Assembler_concatemer1.cc
 
